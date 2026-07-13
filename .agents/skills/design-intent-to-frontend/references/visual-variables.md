@@ -27,6 +27,7 @@ Examples:
 - Color mechanism: contrast system, accent band, inherited brand color, tonal mood, or functional state.
 - Existing visual language: which colors, type scale, spacing, borders, motion, and hierarchy already define the current page.
 - New visual additions: which added elements are required by the reference mechanism or user input, and which are optional decoration.
+- Reference canvas artifacts: which outer backgrounds, preview frames, artificial borders, app chrome, or mockup margins belong to the reference presentation rather than the target page.
 - Motion mechanism: hover feedback, continuous ambient motion, scroll-linked movement, marquee, reveal, or no motion.
 - Responsive priority: preserve exact position, preserve visual weight, preserve reading order, preserve subject crop, or simplify.
 - User involvement: which choices are already explicit, which are safe assumptions, and which remain high-impact decisions.
@@ -49,6 +50,7 @@ Do not write rules like "if the title is DEXTER, make it scroll." Write rules li
 - If a title may overflow, define safe crop behavior and mobile fallback.
 - If motion is used to solve cropping or repetition, define trigger, speed, pause behavior, and accessibility impact.
 - If the user asks to match an existing page, added decoration is a design risk unless it can be traced to the reference mechanism or user input.
+- If the reference is shown inside an outer preview canvas, do not migrate that canvas, frame, or background unless it is part of the user's requested design relationship.
 
 ## User Guidance
 

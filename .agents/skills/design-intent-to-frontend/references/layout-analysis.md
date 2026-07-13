@@ -5,6 +5,7 @@ Use layout analysis to convert a visual reference into frontend constraints that
 ## Analysis Areas
 
 - Canvas strategy: determine whether the reference is a full webpage canvas, a framed poster inside a page, a card, a split layout, or a local component. Do not carry over screenshot borders or presentation margins unless they are part of the intended webpage design.
+- Reference canvas artifacts: identify outer backgrounds, screenshot containers, preview frames, browser/app chrome, artificial borders, and portfolio mockup margins. Treat them as presentation artifacts by default unless the user explicitly asks to preserve that outer canvas relationship.
 - Visual anchors: identify the 3-8 relationships that decide the page's feel and must be verified after rendering.
 - Main grid and secondary grid: identify columns, gutters, edge margins, and nested alignment systems.
 - Viewport anchors: locate what is tied to top, bottom, left, right, center, or a proportional region of the viewport.
@@ -37,5 +38,6 @@ Use layout analysis to convert a visual reference into frontend constraints that
 - Check whether a layout is anchored by text, image, whitespace, or navigation before coding.
 - Before coding, state the intended canvas relationship: full-bleed, bounded, framed, inset, or component-local.
 - If the reference screenshot includes black bars, app chrome, mockup padding, or social-media margins, decide whether those are content or presentation artifacts.
+- When matching an existing page, do not import the reference's outer background or frame if it conflicts with the current site's established visual language.
 - Treat wrong canvas scale, wrong outer margins, and unintended framed layouts as high-priority visual differences.
 - Put visual anchors into the Visual Alignment Contract when they are important enough to verify.

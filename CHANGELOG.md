@@ -5,6 +5,7 @@
 - Added existing visual language and new visual additions as implementation-changing variables.
 - Added assumption-boundary guidance for fuzzy but usable reference tasks.
 - Added a guardrail against untraceable decorative additions when matching an existing page.
+- Added reference canvas artifact checks for outer backgrounds, preview frames, artificial borders, and mockup margins.
 - Updated the Visual Alignment Card to surface conservative additions and likely assumption risks.
 
 ## 0.2.1
