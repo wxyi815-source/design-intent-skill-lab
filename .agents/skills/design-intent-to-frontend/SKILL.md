@@ -43,14 +43,16 @@ Use the smallest output depth that preserves design safety.
 2. Collect known input from the conversation, attachments, reference materials, code, design system, assets, and project constraints.
 3. Run Input Readiness Check and classify as Ready, Usable with assumptions, or Blocked by key decisions.
 4. Select Workflow Mode and output depth.
-5. Determine reference roles and create the five-level constraint matrix: Strictly preserve, Preserve relationships, Reference visual language, Free to redesign, Explicitly prohibited.
-6. Identify 3-8 Visual Anchors for non-trivial visual work.
-7. Create a Visual Alignment Contract for the constraints that must be traceable.
-8. Implement the smallest testable version; use staged rendering for complex work.
-9. Inspect real rendered output at target viewports when tools are available.
-10. Run the Screenshot Delta Loop, classify P0/P1/P2, apply targeted corrections, and stop automatic correction after two rounds unless new evidence appears.
-11. Ask for Human Design Review when remaining choices are subjective.
-12. Report files changed, evidence, contract results, remaining differences, and verification limits.
+5. Determine reference roles and identify the design mechanism: what makes the reference work visually, not what style it belongs to.
+6. Check the key visual variables that change implementation choices: canvas, title behavior, typography role, image role, existing visual language, new visual additions, overlap, motion, and responsive priority. Use `references/visual-variables.md` for non-trivial or unfamiliar references.
+7. Create the five-level constraint matrix: Strictly preserve, Preserve relationships, Reference visual language, Free to redesign, Explicitly prohibited.
+8. Identify 3-8 Visual Anchors for non-trivial visual work.
+9. Create a Visual Alignment Contract for the constraints that must be traceable.
+10. Implement the smallest testable version; use staged rendering for complex work.
+11. Inspect real rendered output at target viewports when tools are available.
+12. Run the Rendered Alignment Loop, classify deviations as P0/P1/P2, apply targeted corrections, and stop automatic correction after two rounds unless new evidence appears.
+13. Ask for Human Design Review when remaining choices are subjective.
+14. Report files changed, evidence, contract results, remaining differences, and verification limits.
 
 ## Input Readiness
 
@@ -63,6 +65,8 @@ Do not ask for information already available from attachments, code, repository 
 ## Visual Alignment Contract
 
 For visual-reference tasks, convert planning into verifiable contract items. Each high-priority item needs a dimension, reference intent, priority, implementation rule, allowed variation, verification method, evidence, and result. Use `references/visual-alignment-contract.md` and `assets/visual-alignment-contract-template.md`.
+
+For non-trivial reference tasks, record a one-sentence Design Mechanism Hypothesis in the Visual Alignment Card or Visual Alignment Contract. At least one contract item must verify whether the rendered result preserves that mechanism. Simple local fixes do not require this field.
 
 Track:
 
@@ -97,6 +101,7 @@ Ask the user when multiple solutions satisfy the contract but differ in mood, cr
 - Do not assume the whole reference is equally important.
 - Do not preserve screenshot borders, black bars, or mockup padding unless the user wants that canvas relationship.
 - Do not use trend effects or redesign beyond scope unless the reference or user requires them.
+- When matching an existing page, keep new decorative elements conservative unless they trace to the reference mechanism or user input.
 - Do not allow unintended text overlap; planned overlap must preserve readability and be verified.
 - Do not expand a local visual fix into a full-site redesign.
 - Do not hide unresolved visual differences or verification limits.
@@ -108,6 +113,7 @@ Ask the user when multiple solutions satisfy the contract but differ in mood, cr
 - `references/layout-analysis.md`: canvas, grids, visual anchors, spacing, and subject relationships.
 - `references/typography-layout.md`: title region, font matching, line breaks, line height, and collisions.
 - `references/responsive-design.md`: responsive relationship preservation.
+- `references/visual-variables.md`: design mechanism and implementation-changing visual variables.
 - `references/visual-alignment-contract.md`: contract fields, traceability, staged rendering, and correction loop.
 - `references/visual-qa.md`: P0/P1/P2, rendered verification integrity, and QA reporting.
 

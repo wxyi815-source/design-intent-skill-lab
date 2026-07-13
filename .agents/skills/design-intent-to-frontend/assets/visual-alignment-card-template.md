@@ -12,6 +12,19 @@
 - Reference 1:
 - Reference 2:
 
+### Design Mechanism Hypothesis
+
+- ...
+
+## Design mechanism
+
+- Core mechanism:
+- Explicit visual variables:
+- Assumed visual variables:
+- Unresolved high-impact choices:
+- Assumption boundary:
+- New visual additions:
+
 ## Key visual decisions
 
 1. Canvas:
@@ -21,6 +34,7 @@
 5. Spacing and visual center:
 6. Overlap:
 7. Responsive behavior:
+8. Existing visual language:
 
 ## Key anchors
 

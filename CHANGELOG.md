@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.2.2
+
+- Added existing visual language and new visual additions as implementation-changing variables.
+- Added assumption-boundary guidance for fuzzy but usable reference tasks.
+- Added a guardrail against untraceable decorative additions when matching an existing page.
+- Updated the Visual Alignment Card to surface conservative additions and likely assumption risks.
+
+## 0.2.1
+
+- Added visual variables and design mechanism analysis.
+- Added guidance to generalize from reference behavior instead of adding case-specific style rules.
+- Updated Visual Alignment Card to distinguish explicit, assumed, and unresolved visual variables.
+- Clarified that user participation should come from meaningful open choices, not unnecessary confirmation checkpoints.
+
 ## 0.2.0
 
 - Added Direct Execution and Collaborative Alignment modes.

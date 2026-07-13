@@ -226,7 +226,7 @@
 - 用户请求：请参考这张图做首页核心首屏，借鉴构图和留白，但不要完全复制。
 - 是否应触发：是
 - 测试能力：首页核心首屏
-- 期望行为：Collaborative Alignment Mode；Standard 或 Detailed output；Visual Alignment Card；3-8 个关键锚点；确认关键方向；分阶段实现；Visual Alignment Contract；Screenshot Delta Loop。
+- 期望行为：Collaborative Alignment Mode；Standard 或 Detailed output；Visual Alignment Card；3-8 个关键锚点；确认关键方向；分阶段实现；Visual Alignment Contract；Rendered Alignment Loop。
 - 失败表现：直接编码，或只给泛泛风格描述。
 
 ### Case W03

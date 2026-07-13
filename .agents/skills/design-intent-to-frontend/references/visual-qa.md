@@ -25,10 +25,11 @@ Visual tasks are not complete just because the page runs. Verify whether the imp
 9. Check overlap policy: intentional layering versus accidental collision.
 10. Check responsive behavior.
 11. Check interaction states.
-12. Classify differences as P0, P1, or P2.
-13. Apply local fixes.
-14. Verify again.
-15. Report anything that cannot be confirmed or solved.
+12. For non-trivial reference tasks, check whether the rendered page still preserves the Design Mechanism Hypothesis.
+13. Classify differences as P0, P1, or P2.
+14. Apply local fixes.
+15. Verify again.
+16. Report anything that cannot be confirmed or solved.
 
 ## Difference Classification
 
@@ -47,9 +48,20 @@ Compare the implementation against the visual plan:
 - Does the visual center land where the plan predicted?
 - Are differences caused by missing assets, technical constraints, or implementation drift?
 - Can every failed P0/P1 be traced to a Visual Alignment Contract item?
-- Has the largest visual delta been corrected and then re-rendered?
+- Has the largest rendered deviation been corrected and then re-rendered?
 
-## Screenshot Delta Loop Limits
+## Design Mechanism Result
+
+For non-trivial reference tasks, report:
+
+- Hypothesis:
+- Observed rendered behavior:
+- Status: Pass / Needs correction / Needs user design review
+- Evidence:
+
+Mark the mechanism as not passing when individual elements look acceptable but the intended visual cause-and-effect relationship fails, such as when the title no longer acts as the visual subject, the layout becomes an average split column, negative space stops controlling visual center, unplanned decoration weakens the mechanism, or motion no longer serves the planned rhythm.
+
+## Rendered Alignment Loop Limits
 
 - Default to at most two automatic visual correction rounds.
 - Round 1 fixes P0 issues first.

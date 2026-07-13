@@ -19,6 +19,7 @@ Each high-priority visual dimension should include:
 
 ## Supported Dimensions
 
+- Overall design mechanism
 - Canvas strategy
 - Main grid
 - Title visual region
@@ -36,6 +37,14 @@ Each high-priority visual dimension should include:
 - Responsive relationship
 - Interaction state
 - Motion rhythm
+
+## Design Mechanism Hypothesis
+
+The Design Mechanism Hypothesis is the bridge between reference analysis and implementation. It is a one-sentence explanation of the core visual cause-and-effect relationship that makes the reference work, not a style label such as "minimal", "premium", or "editorial".
+
+For non-trivial reference tasks, at least one contract item must verify whether the rendered result preserves this mechanism. If every local contract item passes but the overall mechanism fails, visual QA is not complete.
+
+Mechanism verification can focus on first visual landing point, visual center of gravity, image-to-text weight, asymmetric tension, negative space, hierarchy, subject-to-text relationship, or the role of motion in the page's narrative. Do not turn this into a pixel-measurement table. If the mechanism judgment is subjective, mark it `Needs user design review`.
 
 ## Visual Anchors
 
@@ -100,13 +109,13 @@ Handle fine spacing, hover, click, scroll behavior, motion, responsive adaptatio
 
 Direct Execution Mode does not require all three passes. Medium-complexity work can merge Pass 2 and Pass 3.
 
-## Screenshot Delta Loop
+## Rendered Alignment Loop
 
 1. Establish the Visual Alignment Contract.
 2. Complete the smallest testable implementation.
 3. Open the real page.
 4. Wait for fonts, images, and layout resources.
-5. Render or screenshot target viewports.
+5. Inspect, screenshot, check computed styles, review layout bounds, or test interaction states at target viewports.
 6. Compare each contract item against evidence.
 7. Identify the largest visual deviation.
 8. Modify only related files and styles.
