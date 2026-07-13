@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.1.1
+
+- Added progressive user input guidance.
+- Added Input Readiness Check.
+- Added Ready / Usable with assumptions / Blocked classification.
+- Added Quick, Standard, and Detailed input templates.
+- Improved per-reference usage guidance.
+- Added tests for incomplete and informal user input.
+
 ## 0.1.0
 
 - 初始化 `design-intent-skill-lab` 仓库结构。

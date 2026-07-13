@@ -1,5 +1,13 @@
 # Design Implementation Brief
 
+## Input readiness
+
+- Status:
+- Information received:
+- Missing but non-blocking information:
+- Assumptions:
+- Blocking decisions:
+
 ## Task scope
 
 ## Reference materials
@@ -31,3 +39,5 @@
 ## Assumptions
 
 ## Open risks
+
+Note: Translate the user's natural language into professional constraints instead of only repeating the original wording.
