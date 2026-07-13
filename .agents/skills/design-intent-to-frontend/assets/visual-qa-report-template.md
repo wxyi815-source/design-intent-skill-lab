@@ -6,7 +6,19 @@
 
 ## Engineering checks
 
-## Viewports checked
+## Visual evidence
+
+- Rendered page inspected:
+- Viewports:
+- Fonts loaded:
+- Images loaded:
+- Screenshot or browser evidence:
+- Verification limitations:
+
+## Contract results
+
+| Contract ID | Expected | Observed | Severity | Action | Final status |
+|---|---|---|---|---|---|
 
 ## P0 differences
 
@@ -16,8 +28,24 @@
 
 ## Fixes applied
 
-## Remaining issues
+## Automatic correction rounds
 
-## Verification limitations
+### Round 1
+
+- Largest deviation:
+- Correction:
+- Result:
+
+### Round 2
+
+- Largest deviation:
+- Correction:
+- Result:
+
+## Needs user design review
+
+- ...
+
+## Remaining issues
 
 ## Recommended next stage

@@ -54,7 +54,7 @@ $design-intent-to-frontend
 
 ## How to provide input
 
-你不需要掌握专业设计术语。可以只提供自然语言和参考图，Skill 会帮助整理成任务范围、参考用途、保留约束、允许差异、响应式要求和完成标准。
+你可以使用自然语言，也可以直接使用专业设计术语。Skill 会帮助整理成任务范围、参考用途、保留约束、允许差异、响应式要求、视觉锚点和完成标准。
 
 根据任务复杂度，可以选择三种输入方式：
 
@@ -69,6 +69,41 @@ $design-intent-to-frontend
 ```text
 .agents/skills/design-intent-to-frontend/assets/user-input-guide.md
 ```
+
+## Workflow modes
+
+`design-intent-to-frontend` 会根据任务复杂度自动选择协作模式：
+
+- Direct Execution Mode：适合单个标题位置、文字宽度、按钮间距、低风险响应式等局部修正。输出更短，直接执行，但仍需要真实渲染检查。
+- Collaborative Alignment Mode：适合首页首屏、品牌核心页面、多参考图、复杂动效或会改变视觉方向的任务。先输出 Visual Alignment Card 和关键视觉锚点，再分阶段实现。
+
+示例：
+
+```text
+只把标题上移一点，不改其他内容。
+```
+
+通常进入 Direct Execution Mode。
+
+```text
+参考这三张图做首页首屏，分别参考构图、字体和动效。
+```
+
+通常进入 Collaborative Alignment Mode。
+
+## How visual alignment works
+
+```text
+Reference analysis
+-> Visual Alignment Card
+-> Visual Alignment Contract
+-> Staged implementation
+-> Rendered inspection
+-> Targeted corrections
+-> User design review when needed
+```
+
+Skill 不能保证首轮结果完全一致，也不是像素级复制工具。它通过减少信息丢失、建立视觉锚点、检查真实页面和定向修正来提高完成度。用户的设计判断仍然是最终决策的一部分。
 
 ## 打开 demo-site
 

@@ -37,3 +37,11 @@ Use user-specified viewports first. If none are specified, reasonable defaults i
 ## Verification
 
 Check that there is no horizontal scrolling, unreadable text, broken line rhythm, clipped interactive state, or unintentional inversion of visual hierarchy.
+
+## Contract-Oriented Responsive Checks
+
+- Add responsive relationship items to the Visual Alignment Contract when cross-device behavior is part of the task.
+- Verify whether the same anchor survives, reflows, scales, crops, or is intentionally hidden.
+- Do not require desktop coordinates on mobile; require the preserved information priority and intended visual relationship.
+- If mobile is only a sanity check, use Direct Execution Mode and keep output Quick.
+- If mobile changes the core visual direction, include it in Collaborative Alignment Mode and staged rendering.

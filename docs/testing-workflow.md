@@ -5,11 +5,13 @@
 3. 记录用户提示词。
 4. 明确预期行为。
 5. 显式调用 Skill。
-6. 检查设计简报。
-7. 检查代码修改。
-8. 检查视觉 QA 报告。
-9. 按 rubric 评分。
-10. 将失败归类为通用 Skill、项目规则、单次输入或代码问题。
+6. 检查 Workflow Mode 和输出深度是否合适。
+7. 检查 Visual Alignment Card 或 Quick 约束是否足够。
+8. 检查 Visual Alignment Contract 是否可验证。
+9. 检查代码修改。
+10. 检查真实渲染证据和视觉 QA 报告。
+11. 按 rubric 评分。
+12. 将失败归类为通用 Skill、项目规则、单次输入或代码问题。
 
 ## 输入引导测试
 
@@ -26,6 +28,21 @@
 - 是否把非阻塞缺失项写成保守假设，而不是静默虚构。
 - 是否仍然聚焦网页设计、前端实现、视觉修改或视觉 QA，而不是变成通用提示词教学。
 
+## 设计对齐测试
+
+测试参考图实现时，额外检查：
+
+- 是否在编码前输出 canvas strategy、title placement、typography match level、color relationship、visual subject relationship 和 overlap policy。
+- 是否区分截图外场、展示边距和真实网页画布。
+- 是否把标题位置、字号、字重、行距、大小写和对齐方式转成可检查约束。
+- 是否明确哪些文字叠压是允许的视觉层级，哪些是 P0 碰撞。
+- 是否在实现后按视觉计划逐项 QA，而不是只说页面可以运行。
+- 用户反馈后是否把问题映射回画布、标题、字体、色彩、素材关系、留白、视觉重心或响应式。
+- 是否用局部修正处理偏差，而不是重写无关页面。
+- 是否建立 Visual Alignment Contract，并把 P0/P1 差异追踪回合同项。
+- 是否限制自动修正轮次，避免无证据微调。
+- 是否在主观判断处请求用户设计判断，并给出具体选项。
+
 ## 记录建议
 
 每次测试记录以下内容：
@@ -39,6 +56,12 @@
 - P0/P1/P2 差异。
 - Rubric 分数。
 - Input readiness 状态。
+- Pre-implementation visual plan 是否完整。
+- Workflow Mode。
+- Output depth。
+- Contract item 数量。
+- Rendered evidence 是否存在。
+- Design alignment loop 中发现的 P0/P1/P2。
 - 是否存在重复提问。
 - 是否存在不必要的冗长表单。
 - 是否需要修改 Skill。

@@ -8,6 +8,11 @@
 - Assumptions:
 - Blocking decisions:
 
+## Workflow
+
+- Workflow mode:
+- Output depth:
+
 ## Task scope
 
 ## Reference materials
@@ -28,13 +33,49 @@
 
 ## Typography analysis
 
+## Key visual anchors
+
+- Anchor 1:
+- Anchor 2:
+- Anchor 3:
+
+## Visual Alignment Contract summary
+
+- Contract items:
+- P0 items:
+- Items requiring rendered evidence:
+
+## Pre-implementation visual plan
+
+- Canvas strategy:
+- Title placement:
+- Typography match level:
+- Color relationship:
+- Visual subject relationship:
+- Spacing and visual center:
+- Overlap policy:
+- Responsive hypothesis:
+
 ## Interaction states
 
 ## Responsive strategy
 
-## Files expected to change
+## Rendering passes
 
-## Target viewports
+- Pass 1:
+- Pass 2:
+- Pass 3:
+
+## Verification plan
+
+- Target viewports:
+- Rendered evidence:
+- Contract items to verify:
+- Verification limitations:
+
+## Human review points
+
+## Files expected to change
 
 ## Assumptions
 

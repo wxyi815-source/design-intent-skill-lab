@@ -2,6 +2,19 @@
 
 Use the smallest input mode that gives enough direction for the task. The user does not need design terminology; translate informal language into structured constraints.
 
+## Workflow mode hints
+
+- Direct Execution Mode: choose for local fixes, small alignment changes, simple text width or line-break repairs, and low-risk responsive fixes.
+- Collaborative Alignment Mode: choose for homepage hero sections, brand-critical pages, multi-reference work, complex motion, or tasks that change the core visual direction.
+
+## Readiness classification
+
+- Ready: task, scope, references, and acceptance criteria are sufficient.
+- Usable with assumptions: missing information can be handled with conservative assumptions.
+- Blocked by key decisions: missing information would change visual direction, page structure, content structure, required assets, or implementation safety.
+
+Design-fluent users can use professional terms such as visual center, asymmetric grid, negative space, collision zone, type weight, and subject safe area. Codex should convert these terms into executable constraints and contract items.
+
 ## Quick input
 
 Best for local fixes or when the user already supplied reference materials.

@@ -1,5 +1,27 @@
 # Changelog
 
+## 0.2.0
+
+- Added Direct Execution and Collaborative Alignment modes.
+- Added adaptive output depth.
+- Added Visual Alignment Contract.
+- Added visual anchor analysis.
+- Added constraint traceability.
+- Added staged rendering workflow.
+- Added rendered Screenshot Delta Loop.
+- Added verification integrity rules.
+- Added human design review checkpoints.
+- Reduced duplicated instructions in `SKILL.md`.
+- Added tests for verbosity, visual evidence, and targeted corrections.
+
+## 0.1.2
+
+- Added Pre-implementation Visual Plan Check.
+- Added Design Alignment Loop for iterative visual correction.
+- Added canvas strategy, title placement, typography match, and overlap policy checks.
+- Updated visual QA to compare implementation against the visual plan, not only page runtime.
+- Captured demo-site test learnings around framed screenshots, centered title layout, title scale, line height, and accidental text overlap.
+
 ## 0.1.1
 
 - Added progressive user input guidance.

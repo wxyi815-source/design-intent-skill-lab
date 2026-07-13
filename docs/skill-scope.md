@@ -14,11 +14,20 @@
 - 部署配置或基础设施。
 - 与视觉界面无关的普通代码调试。
 
-## V0.1 范围
+## V0.2 范围
 
 - 仓库级 Skill。
 - 参考意图分析。
 - 五级设计约束矩阵。
+- Direct Execution 和 Collaborative Alignment 两种 Workflow Mode。
+- Quick、Standard、Detailed 三种输出深度。
+- Visual Alignment Contract。
+- Visual Anchors。
+- Constraint Traceability。
+- Staged Rendering。
+- Screenshot Delta Loop。
+- Verification Integrity。
+- Human Design Review。
 - 布局、文字排版、响应式和视觉 QA 方法。
 - 无依赖静态 demo 测试夹具。
 - 手动测试案例和评分表。
