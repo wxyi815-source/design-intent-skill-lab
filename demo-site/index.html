@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Design Intent Demo Site</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="#top" aria-label="Design Intent Demo home">Intent Lab</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#overview">Overview</a>
+        <a href="#visual">Visual</a>
+        <a href="#notes">Notes</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" id="overview" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Experimental fixture</p>
+          <h1 id="hero-title">A quiet page for testing design intent.</h1>
+          <p class="intro">
+            This neutral demo gives Codex a small frontend surface for layout, spacing, typography, and responsive visual QA experiments.
+          </p>
+          <a class="button" href="#notes">Read notes</a>
+        </div>
+
+        <div class="hero-visual" id="visual" aria-label="Abstract visual placeholder">
+          <div class="visual-panel panel-large"></div>
+          <div class="visual-panel panel-small"></div>
+        </div>
+      </section>
+
+      <section class="notes" id="notes" aria-labelledby="notes-title">
+        <h2 id="notes-title">Test surface notes</h2>
+        <p>
+          This page is intentionally simple. It is stable enough to open directly, but leaves several small visual issues for future Skill tests.
+        </p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
