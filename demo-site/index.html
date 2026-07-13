@@ -8,37 +8,72 @@
   </head>
   <body>
     <header class="site-header">
-      <a class="logo" href="#top" aria-label="Design Intent Demo home">Intent Lab</a>
+      <a class="logo" href="#top" aria-label="Dexter demo home">HOME</a>
       <nav class="site-nav" aria-label="Primary navigation">
-        <a href="#overview">Overview</a>
-        <a href="#visual">Visual</a>
-        <a href="#notes">Notes</a>
+        <a href="#archive">ARCHIVE</a>
+        <a href="#about">ABOUT</a>
+        <a href="#contact">CONTACT</a>
       </nav>
     </header>
 
     <main id="top">
       <section class="hero" id="overview" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="eyebrow">Experimental fixture</p>
-          <h1 id="hero-title">A quiet page for testing design intent.</h1>
-          <p class="intro">
-            This neutral demo gives Codex a small frontend surface for layout, spacing, typography, and responsive visual QA experiments.
-          </p>
-          <a class="button" href="#notes">Read notes</a>
+        <div class="hero-title-wrap">
+          <h1 id="hero-title" aria-label="DEXTER">
+            <span>DEXTER</span>
+            <span aria-hidden="true">DEXTER</span>
+            <span aria-hidden="true">DEXTER</span>
+          </h1>
         </div>
 
-        <div class="hero-visual" id="visual" aria-label="Abstract visual placeholder">
-          <div class="visual-panel panel-large"></div>
-          <div class="visual-panel panel-small"></div>
+        <div class="hero-image" id="visual" aria-label="Center image supplied for the demo">
+          <img src="assets/dexter-center-image.jpeg" alt="People sitting on a boat near the water">
         </div>
+
+        <p class="corner-label corner-left">WANGXINYI</p>
+        <nav class="corner-label corner-right" aria-label="Section index">
+          <a href="#top">1</a>
+          <a href="#archive">2</a>
+          <a href="#about">3</a>
+          <a href="#contact">4</a>
+        </nav>
       </section>
 
-      <section class="notes" id="notes" aria-labelledby="notes-title">
-        <h2 id="notes-title">Test surface notes</h2>
-        <p>
-          This page is intentionally simple. It is stable enough to open directly, but leaves several small visual issues for future Skill tests.
-        </p>
+      <section class="archive" id="archive" aria-labelledby="archive-title">
+        <div class="archive-heading">
+          <p>ARCHIVE / 02 INDEX</p>
+          <h2 id="archive-title">Archive</h2>
+        </div>
+
+        <div class="archive-stack" aria-label="Archive categories">
+          <a class="archive-card archive-card-red archive-card-wide" href="#archive">
+            <span class="archive-number">01</span>
+            <span class="archive-name">motion</span>
+          </a>
+          <a class="archive-card archive-card-ink archive-card-right" href="#archive">
+            <span class="archive-number">02</span>
+            <span class="archive-name">branding</span>
+          </a>
+          <a class="archive-card archive-card-light archive-card-left" href="#archive">
+            <span class="archive-number">03</span>
+            <span class="archive-name">editorial</span>
+          </a>
+          <a class="archive-card archive-card-mid archive-card-right archive-card-deep" href="#archive">
+            <span class="archive-number">04</span>
+            <span class="archive-name">photoworks</span>
+          </a>
+          <a class="archive-card archive-card-red archive-card-left archive-card-low" href="#archive">
+            <span class="archive-number">05</span>
+            <span class="archive-name">identity</span>
+          </a>
+          <a class="archive-card archive-card-light archive-card-right archive-card-lowest" href="#archive">
+            <span class="archive-number">06</span>
+            <span class="archive-name">process</span>
+          </a>
+        </div>
       </section>
+      <section class="notes" id="about" aria-label="About placeholder"></section>
+      <section class="notes" id="contact" aria-label="Contact placeholder"></section>
     </main>
 
     <script src="script.js"></script>
