@@ -52,6 +52,29 @@ $design-intent-to-frontend
 
 也可以提供参考图、设计稿、视觉 Demo 或网页截图，并说明希望 Codex 实现或修正页面。
 
+## 安装到本机 Codex
+
+这个仓库也可以作为 GitHub 可安装 Skill 使用。公开仓库后，在 Codex 中运行：
+
+```text
+$skill-installer
+
+Install skill from:
+https://github.com/wxyi815-source/design-intent-skill-lab/tree/main/.agents/skills/design-intent-to-frontend
+```
+
+安装完成后重启 Codex，即可在其他仓库中调用：
+
+```text
+$design-intent-to-frontend
+```
+
+如需安装固定 beta 版本，可使用对应 tag 路径：
+
+```text
+https://github.com/wxyi815-source/design-intent-skill-lab/tree/v0.3.0-beta.1/.agents/skills/design-intent-to-frontend
+```
+
 ## How to provide input
 
 你可以使用自然语言，也可以直接使用专业设计术语。Skill 会帮助整理成任务范围、参考用途、保留约束、允许差异、响应式要求、视觉锚点和完成标准。

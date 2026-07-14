@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.3.0-beta.1
+
+- Prepared the Skill for GitHub-based installation.
+- Added README installation instructions for installing from `main` or a fixed beta tag.
+- Replaced the demo-site photography asset with a neutral placeholder before public release.
+- Cleaned commit author metadata for public repository history.
+
 ## 0.2.2
 
 - Added existing visual language and new visual additions as implementation-changing variables.
